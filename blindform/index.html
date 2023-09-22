@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="entrainement php">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./webfiles/css/stylee.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""><img src="./uploads/nature-image-for-website.jpg" alt=""></a></li>
+                <li><a href="">Acceuil</a></li>
+            </ul>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href="">Ajout</a></li>
+                <li><a href="">S'enregistrer</a></li>
+                <li><a href="">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="./webfiles/php/other.php" method="POST" enctype="multipart/form-data">
+            <h1>Inscription</h1>
+            <div>
+                <label for="fName">Votre prenom</label>
+                <input type="text" name="fName" placeholder="ex: Gérard" required>
+            </div>
+            <div>
+                <label for="lName">Votre nom</label>
+                <input type="text" name="lName" placeholder="ex: Vacilleux" required>
+            </div>
+            <div>
+                <input type="password" name="mdp" placeholder="changement">
+                <label for="mdp" class="test">Afficher</label>
+            </div>
+            <div>
+                <label for="file">Votre image</label>
+                <input type="file" name="file" required>
+            </div>
+            <div>
+                <label for="twit">Votre lien twitter</label>
+                <input type="url" name="twit" placeholder="ex: https://www.twitter...">
+            </div>
+            <div>
+                <label for="bouq">Votre lien facebook</label>
+                <input type="url" name="bouq" placeholder="ex: https://m.facebook...">
+            </div>
+            <div>
+                <label for="zelda">Votre lien linkedin</label>
+                <input type="url" name="zelda" placeholder="ex: https://www.linkedin...">
+            </div>
+
+            <input type="submit">
+        </form>
+    </main>
+    
+    <footer>
+
+        <div class="waves"></div>
+
+    </footer>
+
+</body>
+<script src="./webfiles/js/script.js"></script>
+
+</html>
