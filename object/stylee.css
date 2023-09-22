@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(170, 172, 151);
+}
+
+div.objects {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 15% 0;
+}
+
+div.object {
+    border-radius: 10px 0;
+    background-color: #ab503d;
+    padding: 1rem;
+    box-shadow: 2px 3px 6px 1px #5f0505;
+}
+
+p {
+    padding: 6px 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+p::after {
+    content: "";
+    background-color: #5f0505;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 15%;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+p:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

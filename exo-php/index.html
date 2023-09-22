@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Revue de code sur les formulaires</title>
+    <meta name="description" content="Exercice de PHP sur les formulaires - revue de code">
+    <link rel="stylesheet" href="./webfiles/css/style.css">
+</head>
+<body>
+    <!--
+        BON COURAGE ! :)
+
+        BONUS : Affichez la / les raisons pour laquelle / lesquelles le/les champs n'ont pas 
+        été correctement renseignés.
+        
+        Ex: Le champ prénom n'a pas été correctement renseigné car :
+            Votre saisie comporte plus de 25 caractères
+            Votre saisie comporte un ou plusieurs caractère(s) non conforme(s).
+    -->
+
+    <form action="./webfiles/php/traitement.php" method="post">
+        <h1>Inscription</h1>
+        <div>
+            <label for="user-firstname">Votre nom :</label>
+            <input type="text" placeholder="ex: Stiquée" name="user-firstname" id="user-firstname" required>
+        </div>
+        <div>
+            <label for="user-lastname">Votre prénom :</label>
+            <input type="text" placeholder="ex: Sophie" name="user-lastname" id="user-lastname" required>
+        </div>
+        <div>
+            <label for="user-email">Votre e-mail :</label>
+            <input type="email" placeholder="ex: sophie.stiquee@gmail.com" name="user-email" id="user-email" required>
+        </div>
+        <div>
+            <label for="user-password">Votre mot de passe :</label>
+            <input type="password" placeholder="**********" name="user-password" id="user-password" required>
+        </div>
+        <div><button type="submit">S'enregistrer</button></div>
+    </form>
+    <button><a href=".\webfiles\php\timer.php">envoyer</a></button>
+</body>
+</html>
